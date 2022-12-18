@@ -1,0 +1,8 @@
+current version 0.2 2022/12/18
+
+v.0.2 2022/12/18
+1. Added output parameters Value.
+2. Added output parametes value at /start 
+3. Added parameters - TimeZone and Numbers of day sleeps
+4. Fix problem with some time zones
+5. Fix incorrect durations values
