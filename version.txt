@@ -6,3 +6,7 @@ v.0.2 2022/12/18
 3. Added parameters - TimeZone and Numbers of day sleeps
 4. Fix problem with some time zones
 5. Fix incorrect durations values
+
+v.0.3 from 2023/03/12
+Begin all from empty page
+Now it will be async programm, because prevouse version didn't work correctly
