@@ -10,10 +10,7 @@ users ={
 def string_to_list(srting: str, delimiter):
     srting = srting.replace('[', '')
     srting = srting.replace(']', '')
-    string = srting.split(delimiter)
-    for i in string:
-        i = int(i)
-    return string
+    return [int(i) for i in srting.split(delimiter)]
 
 def load_data():
     with open('users_data.txt', 'r') as file:
@@ -22,7 +19,7 @@ def load_data():
             if (line != ''):
                 line = line.split('\t')
                 users[line[0]] = {'user_name':line[1],
-                            'sleep_number': line[2],
+                            'sleep_number': int(line[2]),
                             'time_zone':line[3],
                             'durations':string_to_list(line[4],',')
                             }
